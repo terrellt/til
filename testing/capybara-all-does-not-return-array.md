@@ -1,9 +1,8 @@
 # Capybara `all` does not return an array
 
 Although it looks like it returns an `Array`, Capybara's `all` finder actually
-returns a `Capybara::Result`.  Turns out it returns a `Capybara::Result` object.
-This object includes `Enumerable` and responds to many of the most used methods
-on `Array` such as `[]`.
+returns a `Capybara::Result`. This object includes `Enumerable` and responds to
+many of the most used methods on `Array` such as `[]`.
 
 Given the following HTML:
 
